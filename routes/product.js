@@ -6,7 +6,7 @@ const { verify, verifyAdmin } = auth;
 
 const router = express.Router();
 
-// Create a product (POST)
+// Create a product (POST)   //
 router.post("/", verify, verifyAdmin, productController.addProduct);
 
 // Retrieve all products
